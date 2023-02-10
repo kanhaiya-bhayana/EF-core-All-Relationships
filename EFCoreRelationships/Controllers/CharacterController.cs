@@ -45,7 +45,7 @@ namespace EFCoreRelationships.Controllers
         }
 
         [HttpPost("skill")]
-        public async Task<ActionResult<Character>> AddCharacterSkill(AddCharacterSillDto requrest)
+        public async Task<ActionResult<Character>> AddCharacterSkill(AddCharacterSkillDto requrest)
         {
             var character = await _context.Characters
                 .Where(c => c.Id == requrest.CharacterId)
